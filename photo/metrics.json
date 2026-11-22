@@ -1,0 +1,122 @@
+{
+  "thresholds": {
+    "iris_low": 0.4,
+    "iris_high": 0.6,
+    "species": 0.65
+  },
+  "species_order": [
+    "other_iris",
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "counts": {
+    "train": {
+      "other_iris": 45,
+      "setosa": 33,
+      "versicolor": 40,
+      "virginica": 40,
+      "not_iris": 91
+    },
+    "validation": {
+      "other_iris": 12,
+      "setosa": 9,
+      "versicolor": 12,
+      "virginica": 12,
+      "not_iris": 26
+    },
+    "test": {
+      "other_iris": 13,
+      "setosa": 13,
+      "versicolor": 13,
+      "virginica": 13,
+      "not_iris": 27
+    }
+  },
+  "evaluation": {
+    "validation": {
+      "genus_confusion_matrix_at_0_5": [
+        [
+          21,
+          5
+        ],
+        [
+          2,
+          43
+        ]
+      ],
+      "genus_uncertain": 4,
+      "genus_decided_correct": 61,
+      "species_confusion_matrix_iris_only": [
+        [
+          4,
+          2,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          4,
+          5
+        ]
+      ],
+      "end_to_end_explicit_species_correct": 6,
+      "end_to_end_explicit_species_predictions": 13
+    },
+    "test": {
+      "genus_confusion_matrix_at_0_5": [
+        [
+          22,
+          5
+        ],
+        [
+          4,
+          48
+        ]
+      ],
+      "genus_uncertain": 7,
+      "genus_decided_correct": 63,
+      "species_confusion_matrix_iris_only": [
+        [
+          7,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          6,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          5,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          7
+        ]
+      ],
+      "end_to_end_explicit_species_correct": 9,
+      "end_to_end_explicit_species_predictions": 15
+    }
+  }
+}
